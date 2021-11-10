@@ -1,8 +1,10 @@
+# VQ-GNN: A Universal Framework to Scale up Graph Neural Networks using Vector Quantization
+
 Official implementation of our VQ-GNN [paper](https://arxiv.org/abs/2110.14363) (NeurIPS2021).
 
 **TL;DR:** VQ-GNN, a principled universal framework to scale up GNNs using Vector Quantization (VQ) without compromising the performance. In contrast to sampling-based techniques, our approach can effectively preserve all the messages passed to a mini-batch of nodes by learning and updating a small number of quantized reference vectors of global node representations.
 
-# Experiments
+## Experiments
 
 To reproduce the experimental results in the paper, install the required packages and use the commands listed below.
 
@@ -103,7 +105,7 @@ cd vq_gnn_v1
 python main_node.py --hidden-channels 128 --dropout 0 --lr 1e-3 --epochs 100 --batch-size 30000 --test-batch-size 0 --num-M 1024 --num-D 4 --grad-scale 1 1 --warm-up --momentum 0.1 --conv-type GAT --dataset flickr --sampler-type cont --walk-length 5 --cont-sliding-window 1  --recovery-flag --bn-flag 
 ```
 
-# Cite
+## Cite
 If you find VQ-GNN useful, please cite our paper.
 ```
 @misc{ding2021vqgnn,
